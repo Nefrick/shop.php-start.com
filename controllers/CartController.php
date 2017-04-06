@@ -63,7 +63,7 @@ class CartController
             $productsIds = array_keys($productsInCart);
 
             // Получаем массив с полной информацией о необходимых товарах
-            $products = Product::getProdustsByIds($productsIds);
+            $products = Product::getProductsByIds($productsIds);
 
             // Получаем общую стоимость товаров
             $totalPrice = Cart::getTotalPrice($products);
